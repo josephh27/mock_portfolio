@@ -134,19 +134,28 @@ section {
     border-radius: 1em;
     margin-bottom: 1em;
     .icon-container {
-        height: 100px;
+        height: 200px;
         display: grid;
         place-content: center;
+        grid-template-columns: auto auto auto;
         margin: 0 auto;
         &.one{
-            width: 100px;
+            width: 100%;
         }
         &.two{
-            width: 100px;
+            width: 100%;
         }
         &.three{    
-            width: 100px;
+            width: 100%;
         }
+
+        img {
+            height: 100px;
+        }
+
+        
+
+        
     }
     
     .skill-title {
@@ -317,3 +326,17 @@ section {
         padding: 9em 20em 6em 20em;
     }
 }   
+
+.circle {
+    animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+    from {
+        transform: translate(181px, 726px);
+        z-index: 5;
+    }
+    to {
+        transform: translate(181px, 774px);
+    }
+}

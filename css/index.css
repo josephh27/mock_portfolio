@@ -128,19 +128,23 @@ section {
   margin-bottom: 1em;
 }
 .skills-container ul li .icon-container {
-  height: 100px;
+  height: 200px;
   display: grid;
   place-content: center;
+  grid-template-columns: auto auto auto;
   margin: 0 auto;
 }
 .skills-container ul li .icon-container.one {
-  width: 100px;
+  width: 100%;
 }
 .skills-container ul li .icon-container.two {
-  width: 100px;
+  width: 100%;
 }
 .skills-container ul li .icon-container.three {
-  width: 100px;
+  width: 100%;
+}
+.skills-container ul li .icon-container img {
+  height: 100px;
 }
 .skills-container ul li .skill-title {
   font-weight: bold;
@@ -278,5 +282,28 @@ section {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
+  }
+}
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    transform: translate(181px, 726px);
+    z-index: 5;
+  }
+  to {
+    transform: translate(181px, 774px);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    transform: translate(181px, 726px);
+    z-index: 5;
+  }
+  to {
+    transform: translate(181px, 774px);
   }
 }/*# sourceMappingURL=index.css.map */
